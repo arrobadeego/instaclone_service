@@ -26,8 +26,15 @@ module.exports = {
         fs.unlinkSync(req.file.path);
 
         const post = await Post.create({
-            author, place, description, hashtags, image: filename
+            author, 
+            place, 
+            description, 
+            hashtags, 
+            image: filename
         });
+
+        req.io.emit('post', post);
+
         return res.json(post); 
     }
 };

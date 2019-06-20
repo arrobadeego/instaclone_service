@@ -7,8 +7,6 @@ mongoose.connect('mongodb+srv://admin:12345@cluster0-vybfh.mongodb.net/test?retr
     useNewUrlParser: true
 });
 
-app.get('/', (req, res) => {
-    return res.send('hello world');
-});
+app.use(require('./routes.js')); 
 
 app.listen(3333);

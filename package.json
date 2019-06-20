@@ -1,0 +1,10 @@
+{
+  "name": "instacloneservice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Diego Moreira <diegomptcc@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
